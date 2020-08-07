@@ -14,12 +14,12 @@
     <table class="table job-listing">
         <tr th:each="job: ${jobs}">
             <td>
-                <p th:style="${'color: Green'}">ID: <span th:style="${'color: white'}" th:text="${job.id}"></span></p>
-                <p th:style="${'color: Green'}">Name: <span th:style="${'color: white'}" th:text="${job.name}"></span></p>
-                <p th:style="${'color: Green'}">Employer: <a th:style="${'color: white'}" th:href="@{/list/jobs(column=${'employer'},value=${job.employer})}" th:text="${job.employer}"></a></p>
-                <p th:style="${'color: Green'}">Location: <a th:style="${'color: white'}" th:href="@{/list/jobs(column=${'location'},value=${job.location})}" th:text="${job.location}"></a></p>
-                <p th:style="${'color: Green'}">Position Type: <a th:style="${'color: white'}" th:href="@{/list/jobs(column=${'positionType'},value=${job.positionType})}" th:text="${job.positionType}"></a></p>
-                <p th:style="${'color: Green'}">Skill: <a th:style="${'color: white'}" th:href="@{/list/jobs(column=${'coreCompetency'},value=${job.coreCompetency})}" th:text="${job.coreCompetency}"></a></p>
+                <p th:style="${'color: Green'}">ID: <span th:style="${'color: Black'}" th:text="${job.id}"></span></p>
+                <p th:style="${'color: Green'}">Name: <span th:style="${'color: Black'}" th:text="${job.name}"></span></p>
+                <p th:style="${'color: Green'}">Employer: <a th:style="${'color: Black'}" th:href="@{/list/jobs(column=${'employer'},value=${job.employer})}" th:text="${job.employer}"></a></p>
+                <p th:style="${'color: Green'}">Location: <a th:style="${'color: Black'}" th:href="@{/list/jobs(column=${'location'},value=${job.location})}" th:text="${job.location}"></a></p>
+                <p th:style="${'color: Green'}">Position Type: <a th:style="${'color: Black'}" th:href="@{/list/jobs(column=${'positionType'},value=${job.positionType})}" th:text="${job.positionType}"></a></p>
+                <p th:style="${'color: Green'}">Skill: <a th:style="${'color: Black'}" th:href="@{/list/jobs(column=${'coreCompetency'},value=${job.coreCompetency})}" th:text="${job.coreCompetency}"></a></p>
             </td>
         </tr>
     </table>
